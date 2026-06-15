@@ -180,27 +180,27 @@ class LanguageManager {
             console.warn('Unsupported language:', langCode);
             return;
         }
-        
-        // Store preference
+
         try {
             localStorage.setItem('ferroxa-language', langCode);
         } catch (e) {
             console.warn('Could not store language preference:', e);
         }
-        
-        // Update URL
-        const url = new URL(window.location);
-        url.searchParams.set('lang', langCode);
-        
-        // Use replaceState to avoid adding to history for same page
-        if (langCode !== this.currentLanguage) {
-            window.history.pushState({}, '', url);
-            
-            // Reload page to apply language changes
-            window.location.reload();
-        } else {
-            window.history.replaceState({}, '', url);
+
+        // Resolve the correct static file for this language
+        const filename = window.location.pathname.split('/').pop() || 'index.html';
+
+        // Strip any existing _lang=XX.html suffix to get the base name
+        let base = filename.replace(/_lang=[a-z]+\.html$/, '');
+
+        // .php.html files: strip the trailing .html so base ends in .php
+        if (base.endsWith('.php.html')) {
+            base = base.slice(0, -5);
         }
+
+        const targetFile = base + '_lang=' + langCode + '.html';
+        const dir = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
+        window.location.href = dir + targetFile;
     }
     
     applyLanguage(langCode) {
