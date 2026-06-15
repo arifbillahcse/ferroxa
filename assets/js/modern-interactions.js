@@ -1,5 +1,5 @@
 /**
- * Metallura Website - Modern Interactions
+ * Ferroxa Website - Modern Interactions
  * Advanced JavaScript for modern UI interactions and animations
  */
 

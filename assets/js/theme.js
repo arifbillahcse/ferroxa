@@ -1,5 +1,5 @@
 /**
- * Metallura Website - Theme System
+ * Ferroxa Website - Theme System
  * Dark/Light mode toggle functionality
  */
 
@@ -29,7 +29,7 @@ class ThemeManager {
     
     getStoredTheme() {
         try {
-            return localStorage.getItem('metallura-theme');
+            return localStorage.getItem('ferroxa-theme');
         } catch (e) {
             console.warn('localStorage not available:', e);
             return null;
@@ -43,7 +43,7 @@ class ThemeManager {
     
     storeTheme(theme) {
         try {
-            localStorage.setItem('metallura-theme', theme);
+            localStorage.setItem('ferroxa-theme', theme);
         } catch (e) {
             console.warn('Could not store theme preference:', e);
         }
@@ -215,7 +215,7 @@ class ThemeManager {
     
     resetToSystemTheme() {
         try {
-            localStorage.removeItem('metallura-theme');
+            localStorage.removeItem('ferroxa-theme');
         } catch (e) {
             console.warn('Could not remove theme preference:', e);
         }

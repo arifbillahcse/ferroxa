@@ -1,5 +1,5 @@
 /**
- * Metallura Website - Language System
+ * Ferroxa Website - Language System
  * Multi-language support for English, Arabic, and French
  */
 
@@ -34,7 +34,7 @@ class LanguageManager {
         
         // Check stored preference
         try {
-            const stored = localStorage.getItem('metallura-language');
+            const stored = localStorage.getItem('ferroxa-language');
             if (stored && this.supportedLanguages.includes(stored)) {
                 return stored;
             }
@@ -183,7 +183,7 @@ class LanguageManager {
         
         // Store preference
         try {
-            localStorage.setItem('metallura-language', langCode);
+            localStorage.setItem('ferroxa-language', langCode);
         } catch (e) {
             console.warn('Could not store language preference:', e);
         }

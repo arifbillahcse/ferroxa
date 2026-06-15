@@ -1,5 +1,5 @@
 /**
- * Metallura Website - Main JavaScript
+ * Ferroxa Website - Main JavaScript
  * Core functionality and interactions
  */
 
@@ -869,7 +869,7 @@ function addNetworkFloatingElements(networkSection) {
 }
 
 // Export functions for global access
-window.MetalluraMain = {
+window.FerroxaMain = {
     showNotification,
     hideNotification
 };

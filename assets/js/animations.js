@@ -1,5 +1,5 @@
 /**
- * Metallura Website - Animations
+ * Ferroxa Website - Animations
  * Modern animations and transitions
  */
 
