@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
             <h2 class="section-title">
                 Qui Nous Sommes            </h2>
             <p class="section-subtitle">
-                Nous sommes une société de négoce basée à Dubaï, aux Émirats Arabes Unis. Nous nous spécialisons dans le commerce mondial des métaux ferreux, non-ferreux et précieux, servant de lien fiable entre les producteurs and les utilisateurs finaux. Établie avec la vision de redéfinir la confiance et la transparence dans le commerce des matières premières, Ferroxa combine une connaissance approfondie du marché avec une expertise financière et opérationnelle solide pour apporter de la valeur à nos partenaires dans le monde entier.
+                Nous sommes une société de négoce dont le siège est à Singapour. Nous nous spécialisons dans le commerce mondial des métaux ferreux, non-ferreux et précieux, servant de lien fiable entre les producteurs and les utilisateurs finaux. Établie avec la vision de redéfinir la confiance et la transparence dans le commerce des matières premières, Ferroxa combine une connaissance approfondie du marché avec une expertise financière et opérationnelle solide pour apporter de la valeur à nos partenaires dans le monde entier.
 En tant qu'entreprise agile et ambitieuse, nous nous concentrons sur la fourniture de solutions sur mesure qui répondent aux besoins évolutifs de nos clients et fournisseurs. Notre engagement va au-delà des transactions - nous croyons en la construction de partenariats à long terme basés sur l'intégrité, la performance et la croissance partagée.            </p>
         </div>
    </div>

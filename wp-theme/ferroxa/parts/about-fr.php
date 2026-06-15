@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                     <p>
                         Bienvenue chez Ferroxa Global Pte Ltd, une maison de commerce avant-gardiste établie par une équipe qualifiée et motivée de professionnels avec une expertise en finance, logistique, opérations et gestion des risques. Ensemble, nous menons l'engagement de l'entreprise vers l'excellence dans le commerce mondial des métaux.
 
-Basés à Dubaï, EAU, nous tirons stratégiquement parti de notre emplacement au carrefour de l'Afrique, de l'Asie et du Moyen-Orient pour faciliter un commerce mondial efficace. Nos opérations s'étendent sur les marchés clés, connectant les producteurs des régions riches en ressources avec les utilisateurs finaux recherchant qualité et fiabilité.
+Basés à Singapour, nous tirons stratégiquement parti de notre emplacement en tant que plaque tournante commerciale mondiale de premier plan pour faciliter un commerce mondial efficace. Nos opérations s'étendent sur les marchés clés, connectant les producteurs des régions riches en ressources avec les utilisateurs finaux recherchant qualité et fiabilité.
 
 Chez Ferroxa, nous comprenons que le commerce des métaux réussi va au-delà des transactions - il s'agit de bâtir la confiance, d'assurer la qualité et de tenir les promesses. Notre approche combine une connaissance approfondie de l'industrie avec un état d'esprit axé sur le client, nous permettant de fournir des solutions sur mesure qui répondent aux besoins uniques de nos partenaires.
 

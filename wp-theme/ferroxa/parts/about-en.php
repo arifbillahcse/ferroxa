@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                     <p>
                         Welcome to Ferroxa Global Pte Ltd, a forward-thinking trading house established by a skilled and motivated team of professionals with expertise across finance, logistics, operations, and risk management. Together, we drive the company's commitment to excellence in the global trade of metals.
 
-Based in Dubai, UAE, we strategically leverage our location at the crossroads of Africa, Asia, and the Middle East to facilitate efficient global trade. Our operations span across key markets, connecting producers from resource-rich regions with end-users seeking quality and reliability.
+Headquartered in Singapore, we strategically leverage our location as a leading global trade hub to facilitate efficient worldwide trade. Our operations span across key markets, connecting producers from resource-rich regions with end-users seeking quality and reliability.
 
 At Ferroxa, we understand that successful metal trading goes beyond transactions — it's about building trust, ensuring quality, and delivering on promises. Our approach combines deep industry knowledge with a client-focused mindset, enabling us to provide tailored solutions that meet the unique needs of our partners.
 

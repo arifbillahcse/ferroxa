@@ -166,14 +166,14 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
             <div class="contact-map-wrapper animate-element" data-animation="fadeInRight">
                 <div class="map-header">
                     <h3 class="map-title">
-                        Notre Emplacement à Dubaï                    </h3>
+                        Notre Bureau à Singapour                    </h3>
                     <p class="map-description">
-                        Visitez-nous à notre Bureau social à Dubaï                    </p>
+                        Visitez-nous à notre Bureau à Singapour                    </p>
                 </div>
-                
+
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.7142627217437!2d55.14127031501157!3d25.230884783851468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f15c38a1e0101%3A0x1d1d2a1b3d4e5f6a!2sJumeirah%20Lakes%20Towers%2C%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1234567890124!5m2!1sen!2sus" 
-                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.748!2d103.8470!3d1.2797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190f0e5c0001%3A0x1f0000000000001!2s38%20Robinson%20Rd%2C%20%2326-01%20Oxley%20Tower%2C%20Singapore%20068906!5e0!3m2!1sen!2sus!4v1700000000001!5m2!1sen!2sus"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>

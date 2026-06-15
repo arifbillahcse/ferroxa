@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
             <h2 class="section-title">
                 Who We Are            </h2>
             <p class="section-subtitle">
-                We are a trading company based in Dubai, United Arab Emirates. We specialize in the global trade of ferrous , non-ferrous and precious metals serving as a reliable link between producers and end-users . Established with a vision to redefine trust and transparency in commodity trading, Ferroxa combines deep market knowledge with strong financial and operational expertise to deliver value to our partners worldwide.
+                We are a trading company headquartered in Singapore. We specialize in the global trade of ferrous , non-ferrous and precious metals serving as a reliable link between producers and end-users . Established with a vision to redefine trust and transparency in commodity trading, Ferroxa combines deep market knowledge with strong financial and operational expertise to deliver value to our partners worldwide.
 As an agile and ambitious company, we focus on providing tailored solutions that meet the evolving needs of our customers and suppliers. Our commitment goes beyond transactions — we believe in building long-term partnerships based on integrity, performance, and shared growth.            </p>
         </div>
    </div>
