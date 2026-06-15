@@ -1,0 +1,427 @@
+/* 
+ * Metallura Website - RTL (Right-to-Left) Support
+ * Arabic Language Layout Adjustments
+ */
+
+/* RTL Base Adjustments */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Header RTL */
+[dir="rtl"] .header-container {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .logo-section {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .logo-link {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-menu {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header-controls {
+  flex-direction: row-reverse;
+}
+
+/* Navigation RTL */
+[dir="rtl"] .nav-link::after {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .dropdown .fa-chevron-down {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+[dir="rtl"] .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .dropdown-link {
+  text-align: right;
+}
+
+/* Language Selector RTL */
+[dir="rtl"] .lang-toggle {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .lang-menu {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] .lang-option {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* Hero Section RTL */
+[dir="rtl"] .hero-content {
+  text-align: center; /* Keep centered for hero */
+}
+
+[dir="rtl"] .hero-cta-btn {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-cta-btn:hover i {
+  transform: translateX(-5px);
+}
+
+/* Scroll Indicator RTL */
+[dir="rtl"] .scroll-indicator {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+
+/* Services Section RTL */
+[dir="rtl"] .service-card {
+  text-align: center; /* Keep centered for cards */
+}
+
+[dir="rtl"] .services-grid {
+  direction: rtl;
+}
+
+/* About Section RTL */
+[dir="rtl"] .about-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .about-content {
+  text-align: right;
+}
+
+[dir="rtl"] .about-stats {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .stat-item {
+  text-align: center; /* Keep centered for stats */
+}
+
+/* Products Section RTL */
+[dir="rtl"] .products-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .product-card {
+  text-align: right;
+}
+
+[dir="rtl"] .product-content {
+  text-align: right;
+}
+
+[dir="rtl"] .product-features {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .feature-tag {
+  text-align: center;
+}
+
+/* Contact Section RTL */
+[dir="rtl"] .contact-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .contact-card {
+  text-align: center; /* Keep centered for contact cards */
+}
+
+[dir="rtl"] .contact-info .contact-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .contact-item i {
+  margin-left: 0.75rem;
+  margin-right: 0;
+}
+
+/* Contact Form RTL */
+[dir="rtl"] .contact-form {
+  text-align: right;
+}
+
+[dir="rtl"] .form-row {
+  direction: rtl;
+}
+
+[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+[dir="rtl"] .form-label {
+  text-align: right;
+}
+
+[dir="rtl"] .form-input,
+[dir="rtl"] .form-textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .form-submit {
+  flex-direction: row-reverse;
+}
+
+/* Footer RTL */
+[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+[dir="rtl"] .footer-section {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-logo {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .footer-links {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-social {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .contact-info .contact-item {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-bottom-content {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-bottom-links {
+  flex-direction: row-reverse;
+}
+
+/* Back to Top RTL */
+[dir="rtl"] .back-to-top {
+  left: 2rem;
+  right: auto;
+}
+
+/* Mobile Navigation RTL */
+[dir="rtl"] .mobile-nav-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-nav-menu {
+  text-align: right;
+}
+
+[dir="rtl"] .mobile-nav-link {
+  text-align: right;
+}
+
+/* Mobile Menu Toggle RTL */
+[dir="rtl"] .mobile-menu-toggle {
+  order: -1;
+}
+
+/* Typography RTL Adjustments */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: right;
+}
+
+[dir="rtl"] p {
+  text-align: right;
+}
+
+/* Section Headers RTL */
+[dir="rtl"] .section-header {
+  text-align: center; /* Keep section headers centered */
+}
+
+/* Arabic Font Optimizations */
+[dir="rtl"] body {
+  font-family: 'Tajawal', 'Cairo', 'Amiri', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+[dir="rtl"] .logo-text {
+  letter-spacing: normal; /* Remove letter spacing for Arabic */
+}
+
+[dir="rtl"] .hero-title {
+  letter-spacing: normal;
+}
+
+[dir="rtl"] .stat-label {
+  letter-spacing: normal;
+}
+
+/* Improved Arabic Text Rendering */
+[dir="rtl"] {
+  -webkit-font-feature-settings: 'liga', 'kern';
+  -moz-font-feature-settings: 'liga', 'kern';
+  -ms-font-feature-settings: 'liga', 'kern';
+  font-feature-settings: 'liga', 'kern';
+}
+
+/* RTL Specific Spacing Adjustments */
+[dir="rtl"] .nav-menu {
+  gap: 2rem;
+  padding-right: 0;
+}
+
+[dir="rtl"] .header-controls {
+  gap: 1rem;
+}
+
+/* RTL Animation Adjustments */
+[dir="rtl"] .nav-link::after {
+  transform-origin: right center;
+}
+
+[dir="rtl"] .dropdown-menu {
+  transform-origin: top right;
+}
+
+[dir="rtl"] .lang-menu {
+  transform-origin: top left;
+}
+
+/* RTL Mobile Responsive */
+@media (max-width: 767px) {
+  [dir="rtl"] .mobile-nav-overlay {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .mobile-nav-content {
+    direction: rtl;
+  }
+  
+  [dir="rtl"] .footer-grid {
+    text-align: center;
+  }
+  
+  [dir="rtl"] .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  [dir="rtl"] .contact-grid {
+    text-align: center;
+  }
+  
+  [dir="rtl"] .about-grid {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  [dir="rtl"] .back-to-top {
+    left: 1rem;
+    right: auto;
+  }
+  
+  [dir="rtl"] .footer-container {
+    text-align: center;
+  }
+  
+  [dir="rtl"] .contact-info .contact-item {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* RTL Accessibility Improvements */
+[dir="rtl"] .sr-only {
+  direction: rtl;
+}
+
+/* RTL Print Styles */
+@media print {
+  [dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  [dir="rtl"] .hero-content {
+    text-align: center;
+  }
+}
+
+/* RTL Dark Theme Specific Adjustments */
+.dark-theme[dir="rtl"] .form-input,
+.dark-theme[dir="rtl"] .form-textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+.dark-theme[dir="rtl"] .dropdown-menu,
+.dark-theme[dir="rtl"] .lang-menu {
+  direction: rtl;
+}
+
+/* RTL Transitions and Animations */
+[dir="rtl"] .hero-cta-btn i,
+[dir="rtl"] .form-submit i {
+  transition: transform var(--transition-fast);
+}
+
+[dir="rtl"] .nav-link::after {
+  transition: width var(--transition-fast);
+}
+
+/* RTL Grid Adjustments */
+[dir="rtl"] .services-grid,
+[dir="rtl"] .products-grid {
+  direction: rtl;
+}
+
+/* Ensure proper text direction for mixed content */
+[dir="rtl"] .hero-subtitle,
+[dir="rtl"] .section-subtitle,
+[dir="rtl"] .service-description,
+[dir="rtl"] .product-description {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL Logo and Branding */
+[dir="rtl"] .logo-link {
+  direction: ltr; /* Keep logo LTR even in RTL mode */
+}
+
+[dir="rtl"] .footer-logo {
+  direction: ltr; /* Keep footer logo LTR */
+}
+
+/* RTL Number and Date Formatting */
+[dir="rtl"] .stat-number {
+  direction: ltr; /* Keep numbers LTR for readability */
+}
+
+[dir="rtl"] .contact-item a[href^="tel:"],
+[dir="rtl"] .contact-item a[href^="mailto:"] {
+  direction: ltr; /* Keep contact info LTR */
+}

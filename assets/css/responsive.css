@@ -1,0 +1,638 @@
+/* 
+ * Metallura Website - Responsive Design
+ * Mobile-first responsive breakpoints
+ */
+
+/* Breakpoints */
+/* 
+ * xs: 0-575px (Mobile Portrait)
+ * sm: 576-767px (Mobile Landscape) 
+ * md: 768-991px (Tablet)
+ * lg: 992-1199px (Desktop)
+ * xl: 1200px+ (Large Desktop)
+ */
+
+/* Large Desktop and above (1200px+) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.75rem;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+  }
+  
+  .services-grid,
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media (max-width: 1199px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  /* Typography adjustments */
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  /* Spacing adjustments */
+  :root {
+    --section-padding: 80px 0;
+    --grid-gap: 24px;
+  }
+  
+  /* Header adjustments */
+  .header-container {
+    padding: 0 15px;
+  }
+  
+  .nav-menu {
+    gap: 1.5rem;
+  }
+  
+  /* Logo text removed - using only SVG logo now */
+  
+  /* Hero section */
+  .hero-container {
+    padding: 0 15px;
+  }
+  
+  .hero-cta-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Grid layouts */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .about-grid {
+    gap: 3rem;
+  }
+  
+  .contact-grid {
+    gap: 3rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* About section adjustments */
+  .about-stats {
+    gap: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  /* Contact form adjustments */
+  .contact-form {
+    padding: 2rem;
+  }
+  
+  .form-row {
+    gap: 1rem;
+  }
+}
+
+/* Mobile Landscape (576px - 767px) */
+@media (max-width: 767px) {
+  /* Show mobile menu toggle */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  /* Hide desktop navigation */
+  .main-navigation {
+    display: none;
+  }
+  
+  /* Typography further adjustments */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  /* Spacing adjustments */
+  :root {
+    --section-padding: 60px 0;
+    --container-padding: 0 15px;
+    --grid-gap: 20px;
+  }
+  
+  /* Header adjustments */
+  .header-container {
+    height: 70px;
+  }
+  
+  /* Logo text removed - using only SVG logo now */
+  
+  .logo-img {
+    height: 100px !important;
+    max-height: 100px !important;
+    min-height: 100px !important;
+  }
+  
+  /* Hero adjustments */
+  .hero-section {
+    min-height: 500px;
+  }
+  
+  .hero-container {
+    text-align: center;
+  }
+  
+  .hero-cta-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Grid layouts - single column */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  /* About section */
+  .about-stats {
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Product cards */
+  .product-image {
+    height: 200px;
+  }
+  
+  .product-content {
+    padding: 1.5rem;
+  }
+  
+  /* Service cards */
+  .service-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Contact form */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* Back to top button */
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Mobile Portrait (0 - 575px) */
+@media (max-width: 575px) {
+  /* Typography mobile adjustments */
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  /* Spacing adjustments */
+  :root {
+    --section-padding: 40px 0;
+    --container-padding: 0 10px;
+  }
+  
+  /* Header mobile */
+  .header-container {
+    padding: 0 10px;
+    height: 60px;
+  }
+  
+  /* Logo text removed - using only SVG logo now */
+  
+  .logo-img {
+    height: 80px !important;
+    max-height: 80px !important;
+    min-height: 80px !important;
+  }
+  
+  .header-controls {
+    gap: 0.5rem;
+  }
+  
+  .lang-toggle,
+  .theme-toggle {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+  }
+  
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Hero mobile */
+  .hero-section {
+    min-height: 400px;
+  }
+  
+  .hero-container {
+    padding: 0 10px;
+  }
+  
+  .hero-cta-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.875rem;
+    gap: 0.5rem;
+  }
+  
+  /* Section headers */
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  /* Cards mobile */
+  .service-card,
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .product-content {
+    padding: 1.25rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  /* Service icons */
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Contact icons */
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+  
+  /* About stats mobile */
+  .about-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .stat-item {
+    min-width: 120px;
+  }
+  
+  .stat-number {
+    font-size: 1.75rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  /* Product features mobile */
+  .product-features {
+    gap: 0.25rem;
+  }
+  
+  .feature-tag {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  /* Form adjustments */
+  .form-input,
+  .form-textarea {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .form-submit {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Footer mobile */
+  .footer-container {
+    padding: 0 10px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .social-link {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer-bottom-links {
+    gap: 0.75rem;
+  }
+  
+  .footer-bottom-link {
+    font-size: 0.8rem;
+  }
+  
+  /* Mobile navigation specific */
+  .mobile-nav-content {
+    padding: 1.5rem;
+  }
+  
+  .mobile-nav-header {
+    margin-bottom: 2rem;
+  }
+  
+  .mobile-nav-link {
+    font-size: 1.125rem;
+    padding: 0.75rem 0;
+  }
+  
+  /* Language selector mobile */
+  .lang-menu {
+    right: -10px;
+    min-width: 130px;
+  }
+  
+  .lang-option {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .lang-option img {
+    width: 18px;
+    height: 13px;
+  }
+}
+
+/* Very small screens (320px and below) */
+@media (max-width: 320px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-title {
+    font-size: 1.375rem;
+  }
+  
+  .container {
+    padding: 0 8px;
+  }
+  
+  .header-container {
+    padding: 0 8px;
+  }
+  
+  .hero-container {
+    padding: 0 8px;
+  }
+  
+  .footer-container {
+    padding: 0 8px;
+  }
+  
+  .contact-form,
+  .service-card,
+  .product-content {
+    padding: 1rem;
+  }
+  
+  .hero-cta-btn {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .main-header,
+  .mobile-menu-toggle,
+  .back-to-top,
+  .scroll-indicator,
+  .hero-video-container,
+  .theme-toggle,
+  .language-selector {
+    display: none !important;
+  }
+  
+  .hero-section {
+    height: auto;
+    min-height: auto;
+    background: var(--primary-blue);
+    color: white;
+    padding: 2rem 0;
+  }
+  
+  .hero-video-overlay {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .section-title {
+    font-size: 18pt;
+  }
+  
+  .service-card,
+  .product-card,
+  .contact-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Accessibility improvements for larger text */
+@media (min-width: 1200px) {
+  .large-text {
+    font-size: 1.125rem;
+  }
+  
+  .large-text .hero-title {
+    font-size: 5.5rem;
+  }
+  
+  .large-text .section-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* High DPI display adjustments */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-img,
+  .footer-logo-img,
+  .mobile-logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    animation-play-state: paused;
+  }
+  
+  .scroll-indicator {
+    animation: none;
+  }
+  
+  .service-card:hover,
+  .product-card:hover,
+  .contact-card:hover {
+    transform: none;
+  }
+}
+
+/* Focus improvements for keyboard navigation */
+@media (any-hover: none) {
+  .service-card:hover,
+  .product-card:hover,
+  .contact-card:hover {
+    transform: none;
+  }
+  
+  .hero-cta-btn:hover,
+  .form-submit:hover,
+  .back-to-top:hover {
+    transform: none;
+  }
+}

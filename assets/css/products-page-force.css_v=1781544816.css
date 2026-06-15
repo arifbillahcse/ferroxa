@@ -1,0 +1,168 @@
+/* ULTIMATE FORCE OVERRIDE FOR PRODUCTS PAGE CTA SECTION */
+
+/* Kill all existing CTA styles and force full-width */
+body .cta-section,
+html .cta-section,
+section.cta-section,
+.cta-section.cta-section,
+.container .cta-section,
+.network-section .cta-section {
+    background: var(--white) !important;
+    padding: 100px 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    max-width: none !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    position: relative !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    overflow: hidden !important;
+    text-align: center !important;
+    color: var(--text-dark) !important;
+}
+
+/* Force container to be centered */
+body .cta-section .container,
+html .cta-section .container,
+section.cta-section .container {
+    max-width: 1200px !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+/* Force content to be centered */
+body .cta-content,
+html .cta-content,
+section .cta-content,
+.cta-section .cta-content {
+    position: relative !important;
+    z-index: 2 !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    box-shadow: none !important;
+}
+
+/* Force title styling */
+body .cta-title,
+html .cta-title,
+.cta-section .cta-title,
+.cta-content .cta-title,
+.cta-section h1,
+.cta-section h2,
+.cta-section h3 {
+    font-size: 3.2rem !important;
+    font-weight: var(--font-weight-bold) !important;
+    margin-bottom: 24px !important;
+    color: var(--primary-blue) !important;
+    text-shadow: none !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    background: transparent !important;
+}
+
+/* Force description styling */
+body .cta-description,
+html .cta-description,
+.cta-section .cta-description,
+.cta-content .cta-description,
+.cta-section p {
+    font-size: 1.3rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 40px !important;
+    color: var(--text-light) !important;
+    font-weight: var(--font-weight-regular) !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: transparent !important;
+}
+
+/* Force button styling */
+body .cta-btn,
+html .cta-btn,
+.cta-section .cta-btn,
+.cta-content .cta-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 20px 40px !important;
+    background: var(--copper) !important;
+    color: var(--white) !important;
+    text-decoration: none !important;
+    border-radius: var(--radius-large) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    font-size: 1.1rem !important;
+    transition: all var(--transition-normal) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    border: 2px solid transparent !important;
+    margin: 0 auto !important;
+}
+
+/* Dark Mode Override */
+[data-theme="dark"] body .cta-section,
+[data-theme="dark"] html .cta-section,
+[data-theme="dark"] section.cta-section,
+[data-theme="dark"] .cta-section.cta-section,
+[data-theme="dark"] .container .cta-section,
+[data-theme="dark"] .network-section .cta-section {
+    background: #1a1a1a !important;
+    color: var(--white) !important;
+}
+
+[data-theme="dark"] body .cta-title,
+[data-theme="dark"] html .cta-title,
+[data-theme="dark"] .cta-section .cta-title,
+[data-theme="dark"] .cta-content .cta-title,
+[data-theme="dark"] .cta-section h1,
+[data-theme="dark"] .cta-section h2,
+[data-theme="dark"] .cta-section h3,
+[data-theme="dark"] .cta-section .cta-content h2,
+[data-theme="dark"] .cta-section .cta-content h3 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+[data-theme="dark"] body .cta-description,
+[data-theme="dark"] html .cta-description,
+[data-theme="dark"] .cta-section .cta-description,
+[data-theme="dark"] .cta-content .cta-description,
+[data-theme="dark"] .cta-section p {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Additional dark mode overrides for all possible title selectors */
+[data-theme="dark"] .cta-section * {
+    color: inherit !important;
+}
+
+[data-theme="dark"] .cta-section h1,
+[data-theme="dark"] .cta-section h2,
+[data-theme="dark"] .cta-section h3,
+[data-theme="dark"] .cta-section h4,
+[data-theme="dark"] .cta-section h5,
+[data-theme="dark"] .cta-section h6 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}

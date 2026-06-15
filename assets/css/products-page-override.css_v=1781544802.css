@@ -1,0 +1,181 @@
+/* PRODUCTS PAGE OVERRIDE - FORCE CHANGES */
+
+/* HERO SECTION OVERRIDE */
+.page-hero {
+    position: relative !important;
+    height: auto !important;
+    min-height: 500px !important;
+    padding: 120px 0 100px !important;
+    background: var(--primary-blue) !important;
+    color: var(--white) !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    display: block !important;
+    align-items: initial !important;
+    justify-content: initial !important;
+}
+
+.page-hero .container {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.page-hero .hero-content {
+    position: relative !important;
+    z-index: 3 !important;
+    display: block !important;
+    text-align: left !important;
+    max-width: 900px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.page-hero .breadcrumb {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin-bottom: 40px !important;
+    font-size: 1.1rem !important;
+    text-align: left !important;
+}
+
+.page-hero .breadcrumb a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+    transition: all var(--transition-fast) !important;
+    font-weight: var(--font-weight-medium) !important;
+}
+
+.page-hero .breadcrumb a:hover {
+    color: var(--copper) !important;
+}
+
+.page-hero .breadcrumb span {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 1.2rem !important;
+}
+
+.page-hero .page-title {
+    font-size: 5rem !important;
+    font-weight: var(--font-weight-bold) !important;
+    margin-bottom: 24px !important;
+    color: white !important;
+    line-height: 1.1 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    text-align: left !important;
+}
+
+.page-hero .page-subtitle {
+    font-size: 1.5rem !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin-bottom: 0 !important;
+    font-weight: var(--font-weight-regular) !important;
+    max-width: 600px !important;
+    text-align: left !important;
+}
+
+/* PRODUCTS TABBED SECTION OVERRIDE */
+.products-tabbed-section {
+    padding: 100px 0 !important;
+    background: var(--light-gray) !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+/* CTA SECTION OVERRIDE - FULL WIDTH DARK BLUE WITH CENTERED CONTENT */
+.cta-section,
+section.cta-section,
+.products-page .cta-section {
+    padding: 100px 0 !important;
+    background: var(--primary-blue-dark) !important;
+    color: var(--white) !important;
+    text-align: center !important;
+    position: relative !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    border-radius: 0 !important;
+    max-width: none !important;
+}
+
+.cta-section .container {
+    max-width: 1200px !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.cta-content {
+    position: relative !important;
+    z-index: 2 !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 80px 40px !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+.cta-title {
+    font-size: 3.2rem !important;
+    font-weight: var(--font-weight-bold) !important;
+    margin-bottom: 24px !important;
+    color: var(--white) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+.cta-description {
+    font-size: 1.3rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 40px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: var(--font-weight-regular) !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 40px !important;
+}
+
+.cta-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 20px 40px !important;
+    background: var(--copper) !important;
+    color: var(--white) !important;
+    text-decoration: none !important;
+    border-radius: var(--radius-large) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    font-size: 1.1rem !important;
+    transition: all var(--transition-normal) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    border: 2px solid transparent !important;
+}
+
+.cta-btn:hover {
+    background: var(--copper-dark) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    gap: 16px !important;
+}

@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aluminium léger pour l'aérospatiale et l'automobile">
+    <title>Aluminium - Metallura</title>
+    
+    <!-- Mobile CSS -->
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    
+    <style>
+        .mobile-product-hero {
+            background: var(--white);
+            color: var(--text-dark);
+            padding: calc(var(--mobile-header-height) + 60px) 0 80px;
+            text-align: center;
+        }
+        
+        .mobile-product-category-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-light);
+            border: 1px solid var(--border-light);
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: var(--copper);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .mobile-product-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--copper);
+            line-height: 1.2;
+        }
+        
+        .mobile-product-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .mobile-product-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin: 40px 0;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .mobile-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            padding: 12px;
+            background: var(--bg-light);
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .mobile-feature i {
+            color: var(--copper);
+        }
+        
+        .mobile-product-image {
+            width: 100%;
+            max-width: 350px;
+            margin: 50px auto 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .mobile-product-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .mobile-specs-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .mobile-specs-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .mobile-specs-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .mobile-specs-list i {
+            color: var(--primary-blue);
+            margin-top: 2px;
+        }
+        
+        .mobile-applications {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        
+        .mobile-application {
+            text-align: center;
+            padding: 20px;
+            background: var(--bg-light);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-application:hover {
+            transform: translateY(-3px);
+        }
+        
+        .mobile-application i {
+            font-size: 2rem;
+            color: var(--copper);
+            margin-bottom: 12px;
+        }
+        
+        .mobile-application span {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .mobile-sidebar-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        
+        .mobile-sidebar-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 12px;
+        }
+        
+        .mobile-sidebar-card p {
+            margin-bottom: 20px;
+        }
+        
+        .mobile-related-products {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .mobile-related-products li {
+            margin-bottom: 12px;
+        }
+        
+        .mobile-related-products a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-dark);
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .mobile-related-products a:hover {
+            background: var(--bg-light);
+            color: var(--primary-blue);
+        }
+        
+        .mobile-download-card {
+            background: linear-gradient(135deg, var(--accent-gold), #f39c12);
+            color: var(--primary-blue);
+        }
+        
+        .mobile-download-card i {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+        
+        .mobile-download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(15, 33, 55, 0.3);
+        }
+        
+        .mobile-cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .mobile-cta-primary {
+            background: var(--accent-gold);
+            color: var(--primary-blue);
+        }
+        
+        .mobile-cta-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2G3DW1DQK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L2G3DW1DQK');
+</script>
+</head>
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="index.php.html">
+            <img src="assets/images/logo.svg" alt="Metallura Logo" class="mobile-logo">
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+                <a href="index.php.html" class="mobile-nav-link">Accueil</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="about.php.html" class="mobile-nav-link">À propos</a>
+            </li>
+            <li class="mobile-nav-item mobile-dropdown">
+                <a href="products.php.html" class="mobile-nav-link">
+                    Produits                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="mobile-dropdown-menu">
+                    <!-- Ferrous Metals -->
+                    <li class="mobile-dropdown-category">
+                        <span class="mobile-category-title">Métaux Ferreux</span>
+                        <ul class="mobile-submenu">
+                            <!-- Semi-Finished -->
+                            <li class="mobile-subcategory-header">
+                                <a href="products.php.html#semi-finished" class="mobile-subcategory-title">
+                                    Semi-Finis                                </a>
+                            </li>
+                            <li><a href="product-steel-billets-mobile.php.html" class="mobile-submenu-link">
+                                Billettes d'Acier                            </a></li>
+                            <li><a href="product-steel-slabs-mobile.php.html" class="mobile-submenu-link">
+                                Brammes d'Acier                            </a></li>
+                            
+                            <!-- Flat -->
+                            <li class="mobile-subcategory-header">
+                                <a href="products.php.html#flat" class="mobile-subcategory-title">
+                                    Plats                                </a>
+                            </li>
+                            <li><a href="products.php.html#hrc" class="mobile-submenu-link">
+                                Bobines Laminées à Chaud (HRC)                            </a></li>
+                            <li><a href="products.php.html#crc" class="mobile-submenu-link">
+                                Bobines Laminées à Froid (CRC)                            </a></li>
+                            <li><a href="products.php.html#galvanized" class="mobile-submenu-link">
+                                Acier Galvanisé (GI/GL)                            </a></li>
+                            <li><a href="products.php.html#plates" class="mobile-submenu-link">
+                                Plaques                            </a></li>
+                            
+                            <!-- Long -->
+                            <li class="mobile-subcategory-header">
+                                <a href="products.php.html#long" class="mobile-subcategory-title">
+                                    Longs                                </a>
+                            </li>
+                            <li><a href="products.php.html#rebar" class="mobile-submenu-link">
+                                Barres d'Armature                            </a></li>
+                            <li><a href="products.php.html#wire-rods" class="mobile-submenu-link">
+                                Fils Machine                            </a></li>
+                            <li><a href="products.php.html#structural" class="mobile-submenu-link">
+                                Acier de Structure                            </a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Non-Ferrous Metals -->
+                    <li class="mobile-dropdown-category">
+                        <span class="mobile-category-title">Métaux Non-Ferreux</span>
+                        <ul class="mobile-submenu">
+                            <li><a href="product-copper-mobile.php.html" class="mobile-submenu-link">
+                                Cuivre                            </a></li>
+                            <li><a href="product-aluminum-mobile.php.html" class="mobile-submenu-link">
+                                Aluminium                            </a></li>
+                            <li><a href="product-zinc-mobile.php.html" class="mobile-submenu-link">
+                                Zinc                            </a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Precious Metals -->
+                    <li class="mobile-dropdown-category">
+                        <span class="mobile-category-title">Métaux Précieux</span>
+                        <ul class="mobile-submenu">
+                            <li><a href="product-gold-mobile.php.html" class="mobile-submenu-link">
+                                Or Brut                            </a></li>
+                            <li><a href="products.php.html#silver" class="mobile-submenu-link">
+                                Argent                            </a></li>
+                            <li><a href="products.php.html#platinum" class="mobile-submenu-link">
+                                Platine                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="blog.php.html" class="mobile-nav-link">Blog</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="contact.php.html" class="mobile-nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Product Hero Section -->
+    <section class="mobile-product-hero">
+        <div class="container">
+            <nav style="margin-bottom: 30px; text-align: center;">
+                <a href="index.php.html" style="color: var(--text-light); text-decoration: none;">Accueil</a>
+                <span style="color: var(--text-light); margin: 0 10px;">/</span>
+                <a href="products.php.html" style="color: var(--text-light); text-decoration: none;">Produits</a>
+                <span style="color: var(--text-light); margin: 0 10px;">/</span>
+                <span style="color: var(--copper); font-weight: 600;">Aluminium</span>
+            </nav>
+            
+            <div class="mobile-product-category-badge">
+                <i class="fas fa-layer-group"></i>
+                Métaux Non-Ferreux            </div>
+            
+            <h1 class="mobile-product-title">
+                Aluminium            </h1>
+            <p class="mobile-product-description">
+                Lingots, profilés et feuilles d'aluminium de première qualité pour les industries automobile, aérospatiale et de la construction. Qualité primaire A7 avec 99,7% de pureté.            </p>
+            
+            <div class="mobile-product-features">
+                <div class="mobile-feature">
+                    <i class="fas fa-check"></i>
+                    <span>99,7% Pur</span>
+                </div>
+                <div class="mobile-feature">
+                    <i class="fas fa-check"></i>
+                    <span>Primaire A7</span>
+                </div>
+                <div class="mobile-feature">
+                    <i class="fas fa-check"></i>
+                    <span>Grade LME</span>
+                </div>
+                <div class="mobile-feature">
+                    <i class="fas fa-check"></i>
+                    <span>Certifié ISO</span>
+                </div>
+            </div>
+            
+            <a href="contact.php.html" class="mobile-btn mobile-btn-primary">
+                Obtenir un Devis                <i class="fas fa-arrow-right"></i>
+            </a>
+            
+            <div class="mobile-product-image">
+                <img src="assets/images/products/aluminum1.png" alt="Premium Aluminum">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="mobile-section">
+        <div class="container">
+            <div class="mobile-card mobile-animate">
+                <h2>Aperçu du Produit</h2>
+                <p>
+                    Nos produits en aluminium offrent des performances supérieures dans des applications exigeantes. Légers mais résistants, parfaits pour les solutions d'ingénierie modernes.                </p>
+                
+                <h3 style="color: var(--primary-blue); margin: 30px 0 20px;">Spécifications Clés</h3>
+                <ul class="mobile-specs-list">
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Qualité: 1050, 1100, 3003, 5052, 6061</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Épaisseur: 0.2mm à 200mm</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Trempe: H14, H18, T4, T6</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Surface: Finition d'usine, Anodisé</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Normes: ASTM B209, EN 573</span>
+                    </li>
+                </ul>
+                
+                <h3 style="color: var(--primary-blue); margin: 30px 0 20px;">Applications</h3>
+                <div class="mobile-applications">
+                    <div class="mobile-application">
+                        <i class="fas fa-plane"></i>
+                        <span>Aérospatial</span>
+                    </div>
+                    <div class="mobile-application">
+                        <i class="fas fa-car"></i>
+                        <span>Automobile</span>
+                    </div>
+                    <div class="mobile-application">
+                        <i class="fas fa-building"></i>
+                        <span>Construction</span>
+                    </div>
+                    <div class="mobile-application">
+                        <i class="fas fa-box"></i>
+                        <span>Emballage</span>
+                    </div>
+                    <div class="mobile-application">
+                        <i class="fas fa-bolt"></i>
+                        <span>Marine</span>
+                    </div>
+                    <div class="mobile-application">
+                        <i class="fas fa-ship"></i>
+                        <span>Électronique</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Information -->
+    <section class="mobile-section mobile-section-alt">
+        <div class="container">
+            <div class="mobile-sidebar-card mobile-animate">
+                <h3>Besoin d'Aide ?</h3>
+                <p>Contactez nos spécialistes de l'aluminium pour des informations détaillées et des devis personnalisés.</p>
+                <a href="contact.php.html" class="mobile-btn mobile-btn-primary">
+                    <i class="fas fa-phone"></i>
+                    Contactez-Nous                </a>
+            </div>
+            
+            <div class="mobile-sidebar-card mobile-animate">
+                <h3>Produits Connexes</h3>
+                <ul class="mobile-related-products">
+                    <li>
+                        <a href="product-copper.php.html">
+                            <i class="fas fa-angle-right"></i>
+                            Cuivre                        </a>
+                    </li>
+                    <li>
+                        <a href="product-zinc.php.html">
+                            <i class="fas fa-angle-right"></i>
+                            Zinc                        </a>
+                    </li>
+                    <li>
+                        <a href="product-gold.php.html">
+                            <i class="fas fa-angle-right"></i>
+                            Or Non-Manufacturé                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="mobile-sidebar-card mobile-download-card mobile-animate">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Télécharger les Spécifications</h3>
+                <p>Obtenez des spécifications détaillées du produit au format PDF.</p>
+                <a href="product-aluminum-mobile.php.html#" class="mobile-download-btn">
+                    <i class="fas fa-download"></i>
+                    Télécharger PDF                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="mobile-section" style="background: rgba(26, 35, 50, 0.95); color: white;">
+        <div class="container">
+            <div class="mobile-text-center">
+                <h2 style="color: white; font-size: 2rem; margin-bottom: 16px;">Prêt à Investir ?</h2>
+                <a href="contact.php.html" class="mobile-btn mobile-btn-secondary" style="background: white; color: var(--copper); border: 2px solid white; font-size: 1.1rem;">
+                    Demander un Devis                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Footer -->
+    <footer class="mobile-footer">
+        <div class="container">
+            <div class="mobile-footer-logo">
+                <img src="assets/images/logo.png" alt="Metallura Logo">
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com" target="_blank" style="font-size: 24px; color: #0077B5;">
+                           <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    </div>
+                    
+            <div class="mobile-footer-grid">
+                <div>
+                    <h4 class="mobile-footer-title">Liens Rapides</h4>
+                    <ul class="mobile-footer-list">
+                        <li><a href="index.php.html">Accueil</a></li>
+                        <li><a href="about.php.html">À propos</a></li>
+                        <li><a href="products.php.html">Produits</a></li>
+                        <li><a href="contact.php.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="mobile-footer-title">Informations de Contact</h4>
+                    <ul class="mobile-footer-list">
+                        <li><a href="tel:+97145764461">+97145764461</a></li>
+                        <li><a href="mailto:info@metallura.com">info@metallura.com</a></li>
+                        <li>Bureau 801B, Tour Mazaya Business A11, JLT, Dubaï, EAU</li>
+                    </ul>
+                </div>
+
+       
+                    
+            </div>
+            
+            <div style="text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7);">
+                <p>&copy; 2026 Metallura. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Mobile JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+            
+            // Change icon
+            const icon = this.querySelector('i');
+            if (mobileNav.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+            } else {
+                icon.className = 'fas fa-bars';
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                mobileMenuToggle.querySelector('i').className = 'fas fa-bars';
+            });
+        });
+        
+        // Add animation delay to cards
+        const cards = document.querySelectorAll('.mobile-card, .mobile-sidebar-card');
+        cards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+    </script>
+</body>
+</html>
