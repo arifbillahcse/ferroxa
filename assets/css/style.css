@@ -45,10 +45,16 @@ ul { list-style: none; }
   box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav-logo img {
   height: 44px;
   width: auto;
   object-fit: contain;
+  display: block;
 }
 
 .nav-links {
@@ -125,7 +131,8 @@ ul { list-style: none; }
   height: 80px;
   width: auto;
   object-fit: contain;
-  margin-bottom: 6px;
+  margin: 0 auto 6px;
+  display: block;
 }
 
 .hero-title {
@@ -523,6 +530,7 @@ footer {
   width: auto;
   object-fit: contain;
   margin-bottom: 14px;
+  display: block;
 }
 
 .footer-brand p {
