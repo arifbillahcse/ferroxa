@@ -1,0 +1,20 @@
+/*
+Theme Name: Ferroxa
+Theme URI: https://www.ferroxa.com
+Author: Ferroxa Global Pte Ltd
+Author URI: https://www.ferroxa.com
+Description: Ferroxa Global Pte Ltd corporate theme. Multilingual (EN/AR/FR) global metals trading website with built-in language switching and RTL support. No translation plugin required.
+Version: 1.0.0
+Requires at least: 5.8
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ferroxa
+*/
+
+/*
+ * The actual visual styles live in the /assets/css/ files, which are
+ * enqueued from functions.php. This file only carries the WordPress
+ * theme header above.
+ */

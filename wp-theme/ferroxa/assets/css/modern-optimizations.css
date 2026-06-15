@@ -1,0 +1,533 @@
+/* 
+ * Metallura Website - Performance Optimizations
+ * Critical CSS optimizations and mobile performance enhancements
+ */
+
+/* ============================================
+   CRITICAL CSS OPTIMIZATIONS
+   ============================================ */
+
+/* Hardware acceleration for improved performance */
+.gpu-optimized {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+/* Optimize heavy animations for better performance */
+.bento-card,
+.feature-card,
+.contact-card,
+.hero-cta-btn,
+.btn,
+.tab-btn {
+  will-change: transform, opacity;
+}
+
+/* Remove will-change after animations complete */
+.animation-complete {
+  will-change: auto;
+}
+
+/* ============================================
+   MOBILE PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* Reduce GPU usage on mobile devices */
+@media (max-width: 768px) {
+  /* Simplify shadows on mobile */
+  .shadow-xl,
+  .shadow-2xl {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Reduce backdrop blur on mobile for better performance */
+  .glass,
+  .glass-card {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  /* Disable complex transforms on mobile */
+  .tilt-card:hover {
+    transform: none;
+  }
+  
+  .morphing-shape {
+    animation: none !important;
+  }
+  
+  /* Optimize bento card animations for mobile */
+  .bento-card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+  
+  /* Reduce parallax effects on mobile */
+  .parallax-bg {
+    transform: none !important;
+  }
+  
+  /* Simplify magnetic effects */
+  .magnetic-hover:hover::before {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ============================================
+   TOUCH-FRIENDLY OPTIMIZATIONS
+   ============================================ */
+
+/* Larger touch targets for mobile */
+@media (max-width: 768px) {
+  .btn,
+  .nav-link,
+  .tab-btn,
+  .lang-toggle,
+  .theme-toggle {
+    min-height: 44px;
+    min-width: 44px;
+    padding: var(--space-3) var(--space-4);
+  }
+  
+  .bento-card,
+  .feature-card,
+  .contact-card {
+    min-height: 60px;
+  }
+  
+  /* Improve tap highlighting */
+  .bento-card,
+  .feature-card,
+  .contact-card,
+  .btn,
+  .nav-link {
+    -webkit-tap-highlight-color: rgba(212, 130, 42, 0.2);
+    tap-highlight-color: rgba(212, 130, 42, 0.2);
+  }
+  
+  /* Better scroll performance on mobile */
+  .hero-section,
+  .contact-form-section,
+  .products-bento-section {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ============================================
+   IMAGE OPTIMIZATION
+   ============================================ */
+
+/* Optimize image loading */
+img {
+  loading: lazy;
+  decoding: async;
+}
+
+/* Critical images should load immediately */
+.hero-video,
+.logo-img,
+.hero-bg-img {
+  loading: eager;
+}
+
+/* Image placeholder styles */
+.img-placeholder {
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* ============================================
+   LOADING OPTIMIZATIONS
+   ============================================ */
+
+/* Skeleton loading states */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--gray-200) 25%,
+    var(--gray-100) 50%,
+    var(--gray-200) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-text {
+  height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.skeleton-text:last-child {
+  width: 80%;
+}
+
+.skeleton-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.skeleton-card {
+  height: 200px;
+  width: 100%;
+}
+
+/* ============================================
+   TYPOGRAPHY OPTIMIZATIONS
+   ============================================ */
+
+/* Optimize font rendering */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+  font-variant-ligatures: common-ligatures;
+}
+
+/* Preload critical fonts */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+}
+
+/* ============================================
+   SCROLL OPTIMIZATIONS
+   ============================================ */
+
+/* Smooth scrolling with performance considerations */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Optimize scroll performance */
+.scroll-container {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--copper) var(--gray-200);
+}
+
+/* Custom scrollbar for webkit browsers */
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: var(--gray-200);
+  border-radius: var(--radius-full);
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: var(--copper);
+  border-radius: var(--radius-full);
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: var(--copper-dark);
+}
+
+/* ============================================
+   ANIMATION PERFORMANCE
+   ============================================ */
+
+/* Use transform instead of changing layout properties */
+.performance-animation {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Avoid animating expensive properties */
+.no-layout-animation {
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Optimize keyframe animations */
+@keyframes optimized-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) translateZ(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+@keyframes optimized-scale {
+  from {
+    transform: scale(0.9) translateZ(0);
+  }
+  to {
+    transform: scale(1) translateZ(0);
+  }
+}
+
+/* ============================================
+   MEMORY OPTIMIZATION
+   ============================================ */
+
+/* Reduce memory usage for background images */
+.bg-optimized {
+  background-attachment: scroll; /* Avoid fixed backgrounds on mobile */
+}
+
+@media (max-width: 768px) {
+  /* Remove complex backgrounds on mobile */
+  .hero-section::before,
+  .products-bento-section::before,
+  .global-network-section::before {
+    display: none;
+  }
+  
+  /* Optimize particle systems for mobile */
+  .particle-container {
+    display: none;
+  }
+}
+
+/* ============================================
+   CRITICAL CSS INLINING
+   ============================================ */
+
+/* Above-the-fold critical styles */
+.critical-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(15, 20, 25, 0.95);
+  backdrop-filter: blur(20px);
+}
+
+.critical-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f1419 0%, #243142 100%);
+}
+
+/* ============================================
+   NETWORK OPTIMIZATION
+   ============================================ */
+
+/* Optimize for slow networks */
+@media (prefers-reduced-data: reduce) {
+  /* Disable video backgrounds */
+  .hero-video {
+    display: none;
+  }
+  
+  /* Use simpler backgrounds */
+  .hero-section {
+    background: var(--primary-blue);
+  }
+  
+  /* Reduce image quality */
+  img {
+    image-rendering: optimizeSpeed;
+  }
+  
+  /* Disable complex animations */
+  .morphing-shape,
+  .particle,
+  .parallax-bg {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* ============================================
+   PRINT OPTIMIZATIONS
+   ============================================ */
+
+@media print {
+  /* Hide non-essential elements */
+  .hero-video,
+  .particle-container,
+  .theme-toggle,
+  .mobile-menu-toggle,
+  .back-to-top {
+    display: none !important;
+  }
+  
+  /* Optimize layout for print */
+  .container {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Use print-friendly colors */
+  .hero-section,
+  .global-network-section {
+    background: white !important;
+    color: black !important;
+  }
+  
+  /* Expand collapsed content */
+  .tab-panel {
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY OPTIMIZATIONS
+   ============================================ */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn,
+  .card,
+  .form-input {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Focus indicators for better accessibility */
+.focus-visible {
+  outline: 3px solid var(--copper);
+  outline-offset: 2px;
+}
+
+/* Skip links for screen readers - removed */
+
+/* ============================================
+   BROWSER-SPECIFIC OPTIMIZATIONS
+   ============================================ */
+
+/* Safari-specific optimizations */
+@supports (-webkit-appearance: none) {
+  .glass,
+  .glass-card {
+    -webkit-backdrop-filter: blur(20px);
+  }
+}
+
+/* Firefox-specific optimizations */
+@-moz-document url-prefix() {
+  .glass,
+  .glass-card {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Edge-specific optimizations */
+@supports (-ms-ime-align: auto) {
+  .backdrop-blur {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* ============================================
+   DARK MODE OPTIMIZATIONS
+   ============================================ */
+
+[data-theme="dark"] {
+  /* Optimize dark mode performance */
+  color-scheme: dark;
+}
+
+[data-theme="dark"] .skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--gray-700) 25%,
+    var(--gray-600) 50%,
+    var(--gray-700) 75%
+  );
+}
+
+/* ============================================
+   FEATURE DETECTION OPTIMIZATIONS
+   ============================================ */
+
+/* Grid support fallback */
+@supports not (display: grid) {
+  .bento-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .bento-card {
+    flex: 1 1 300px;
+    margin: var(--space-3);
+  }
+}
+
+/* Flexbox gap fallback */
+@supports not (gap: 1rem) {
+  .flex {
+    margin: calc(-1 * var(--space-2));
+  }
+  
+  .flex > * {
+    margin: var(--space-2);
+  }
+}
+
+/* ============================================
+   FINAL PERFORMANCE CLEANUP
+   ============================================ */
+
+/* Remove unused vendor prefixes */
+.no-vendor-prefix {
+  appearance: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+/* Optimize painting */
+.contain-paint {
+  contain: paint;
+}
+
+.contain-layout {
+  contain: layout;
+}
+
+.contain-style {
+  contain: style;
+}
+
+/* Layer promotion for better compositing */
+.promote-layer {
+  transform: translateZ(0);
+  opacity: 0.9999;
+}
+
+/* Final performance tweaks */
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
