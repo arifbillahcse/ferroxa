@@ -409,7 +409,7 @@
   padding: var(--space-2) 0;
   font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
-  color: var(--text-primary);
+  color: var(--white);
   margin-bottom: var(--space-2);
 }
 
@@ -428,7 +428,7 @@
 .mobile-sub-link {
   display: block;
   padding: var(--space-2) var(--space-4);
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: var(--text-sm);
   font-weight: var(--font-weight-medium);
