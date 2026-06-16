@@ -172,7 +172,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 </div>
 
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.748!2d103.8470!3d1.2797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190f0e5c0001%3A0x1f0000000000001!2s38%20Robinson%20Rd%2C%20%2326-01%20Oxley%20Tower%2C%20Singapore%20068906!5e0!3m2!1sen!2sus!4v1700000000001!5m2!1sen!2sus"
+                    <iframe src="https://www.google.com/maps?q=38+Robinson+Road,+%2326-01+Oxley+Tower,+Singapore+068906&output=embed"
                             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
