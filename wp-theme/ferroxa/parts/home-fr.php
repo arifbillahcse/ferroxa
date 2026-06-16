@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 <h1 class="hero-title">
                     Ferroxa                </h1>
                 <p class="section-subtitle" style="color:white;margin-top: -20px;">
-                Connecter les Marchés, Bâtir la Confiance            </p>
+                Bâti sur la Confiance. Propulsé par le Commerce.            </p>
                 <div class="hero-actions">
                     <a href="#about" class="hero-cta-btn">
                         <span>Découvrez qui nous sommes</span>

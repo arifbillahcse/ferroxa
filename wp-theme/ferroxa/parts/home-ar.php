@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 <h1 class="hero-title">
                     فيروكسا                </h1>
                 <p class="section-subtitle" style="color:white;margin-top: -20px;">
-                ربط الأسواق، بناء الثقة            </p>
+                مبني على الثقة. مدعوم بالتجارة.            </p>
                 <div class="hero-actions">
                     <a href="#about" class="hero-cta-btn">
                         <span>اكتشف من نحن</span>

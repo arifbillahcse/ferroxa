@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
                 <h1 class="hero-title">
                     Ferroxa                </h1>
                 <p class="section-subtitle" style="color:white;margin-top: -20px;">
-                Connecting Markets, Building Trust            </p>
+                Build on Trust. Powered by Trade.            </p>
                 <div class="hero-actions">
                     <a href="#about" class="hero-cta-btn">
                         <span>Discover who we are</span>
