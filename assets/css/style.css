@@ -211,7 +211,10 @@ img {
 /* Mobile header always visible */
 @media (max-width: 768px) {
   .main-header {
-    transform: translateY(0) !important;
+    /* No transform here: a transform on this ancestor would turn the
+       position:fixed .mobile-nav-overlay (and any other fixed descendant)
+       into being positioned relative to this header box instead of the
+       viewport, confining the overlay to the header's height. */
     opacity: 1 !important;
   }
 }
