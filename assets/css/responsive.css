@@ -179,7 +179,11 @@
   .header-container {
     height: 70px;
   }
-  
+
+  .hero-logo {
+    max-width: 56% !important;
+  }
+
   /* Logo text removed - using only SVG logo now */
   
   .logo-img {

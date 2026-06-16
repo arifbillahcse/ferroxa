@@ -17,116 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /**
  * Mobile Navigation - Enhanced for All Pages
+ *
+ * The hamburger toggle (#mobile-menu-toggle) and the language dropdown
+ * (#lang-toggle) are already wired up unconditionally in main.js and
+ * wp-language.js respectively. Attaching a second set of click handlers
+ * here used to fight with those for the same elements/classes (each click
+ * could open and then immediately re-close the menu), so this function no
+ * longer duplicates that logic.
  */
-function initializeMobileNavigation() {
-    const mobileToggle = document.querySelector('.mobile-menu-toggle') || document.querySelector('#mobile-menu-toggle');
-    const mobileOverlay = document.querySelector('.mobile-nav-overlay') || document.querySelector('#mobile-nav-overlay');
-    const mobileNavClose = document.querySelector('.mobile-nav-close') || document.querySelector('#mobile-nav-close');
-    
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleMobileMenu();
-        });
-        
-        // Close button handler
-        if (mobileNavClose) {
-            mobileNavClose.addEventListener('click', function(e) {
-                e.preventDefault();
-                closeMobileMenu();
-            });
-        }
-        
-        // Toggle function
-        function toggleMobileMenu() {
-            const isOpen = mobileOverlay && mobileOverlay.classList.contains('active');
-            if (isOpen) {
-                closeMobileMenu();
-            } else {
-                openMobileMenu();
-            }
-        }
-        
-        // Open menu function
-        function openMobileMenu() {
-            mobileToggle.classList.add('active');
-            if (mobileOverlay) {
-                mobileOverlay.classList.add('active');
-                mobileOverlay.style.display = 'flex';
-            }
-            document.body.style.overflow = 'hidden';
-            
-            // Focus management for accessibility
-            setTimeout(() => {
-                const firstLink = mobileOverlay && mobileOverlay.querySelector('.mobile-nav-link');
-                if (firstLink) firstLink.focus();
-            }, 300);
-        }
-        
-        // Close menu function
-        function closeMobileMenu() {
-            mobileToggle.classList.remove('active');
-            if (mobileOverlay) {
-                mobileOverlay.classList.remove('active');
-                mobileOverlay.style.display = 'none';
-            }
-            document.body.style.overflow = '';
-            
-            // Return focus to menu toggle
-            mobileToggle.focus();
-        }
-        
-        // Close on overlay click
-        if (mobileOverlay) {
-            mobileOverlay.addEventListener('click', function(e) {
-                if (e.target === mobileOverlay) {
-                    closeMobileMenu();
-                }
-            });
-        }
-        
-        // Close on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && mobileOverlay && mobileOverlay.classList.contains('active')) {
-                closeMobileMenu();
-            }
-        });
-        
-        // Close on navigation link click
-        if (mobileOverlay) {
-            const navLinks = mobileOverlay.querySelectorAll('.mobile-nav-link, .nav-link, a[href]');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    // Only close if it's an actual page link, not a dropdown toggle
-                    const href = this.getAttribute('href');
-                    if (href && href !== '#' && !href.includes('javascript:') && !this.classList.contains('dropdown-toggle')) {
-                        setTimeout(closeMobileMenu, 150);
-                    }
-                });
-            });
-        }
-        
-        // Language selector functionality
-        const langToggle = document.querySelector('#lang-toggle');
-        const langMenu = document.querySelector('#lang-menu');
-        
-        if (langToggle && langMenu) {
-            langToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                langToggle.classList.toggle('active');
-            });
-            
-            // Close language menu when clicking outside
-            document.addEventListener('click', function(e) {
-                if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
-                    langToggle.classList.remove('active');
-                }
-            });
-        }
-    }
-}
+function initializeMobileNavigation() {}
 
 /**
  * Mobile Page Layout Initialization - For All Pages

@@ -473,6 +473,7 @@ img.logo-img {
 /* Language Selector */
 .language-selector {
   position: relative;
+  z-index: 1100;
 }
 
 .lang-toggle {
@@ -515,6 +516,7 @@ img.logo-img {
   list-style: none;
   padding: 0.5rem 0;
   margin-top: 8px;
+  z-index: 1100;
 }
 
 .language-selector:hover .lang-menu {
@@ -690,7 +692,7 @@ img.logo-img {
 @media (max-width: 1920px) {
   .hero-actions {
     bottom: 0;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -699,7 +701,7 @@ img.logo-img {
 @media (min-width: 2560px) {
   .hero-actions {
     bottom: -102px;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -707,7 +709,7 @@ img.logo-img {
 @media (min-width: 3440px) {
   .hero-actions {
     bottom: -102px;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -715,7 +717,7 @@ img.logo-img {
 @media (max-width: 1366px) {
   .hero-actions {
     bottom: 0;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -723,7 +725,7 @@ img.logo-img {
 @media (max-width: 1280px) {
   .hero-actions {
     bottom: 0;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -731,7 +733,7 @@ img.logo-img {
 @media (max-height: 768px) {
   .hero-actions {
     bottom: 0;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -739,7 +741,7 @@ img.logo-img {
 @media (max-height: 720px) {
   .hero-actions {
     bottom: 0;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -747,7 +749,7 @@ img.logo-img {
 @media (max-height: 600px) {
   .hero-actions {
     bottom: 0;
-    left: 37%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -829,7 +831,7 @@ img.logo-img {
   margin-top: 0.5rem;
   position: absolute;
   bottom: 0;
-  left: 37%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 4;
   text-align: center;
