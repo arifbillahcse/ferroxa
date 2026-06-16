@@ -128,7 +128,7 @@ $lang_names = array( 'en' => 'English', 'ar' => 'العربية', 'fr' => 'Fran�
 			<!-- Language Selector -->
 			<div class="language-selector">
 				<button class="lang-toggle" id="lang-toggle" aria-haspopup="true" aria-expanded="false">
-					<i class="fas fa-globe"></i>
+					<img src="<?php echo ferroxa_asset( 'assets/images/flags/' . $lang . '.svg' ); ?>" alt="<?php echo esc_attr( $lang_names[ $lang ] ); ?>" class="current-lang-flag">
 					<span class="current-lang"><?php echo esc_html( strtoupper( $lang ) ); ?></span>
 					<i class="fas fa-chevron-down"></i>
 				</button>

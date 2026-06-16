@@ -493,6 +493,13 @@ img.logo-img {
   background: rgba(184, 115, 51, 0.1);
 }
 
+.current-lang-flag {
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
 .lang-menu {
   position: absolute;
   top: 100%;
