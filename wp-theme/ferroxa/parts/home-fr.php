@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 <section class="hero-section" id="home">
     <div class="hero-video-container">
         <video class="hero-video" autoplay muted loop playsinline>
-            <source src="<?php echo ferroxa_asset('assets/videos/steel-blades-steel-billets-steel-plates.mp4'); ?>" type="video/mp4">
+            <source src="https://www.metallura.com/assets/videos/steel-blades-steel-billets-steel-plates.mp4" type="video/mp4">
             <!-- Fallback background image if video fails -->
         </video>
     </div>
