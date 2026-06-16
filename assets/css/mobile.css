@@ -64,10 +64,6 @@ p { margin-bottom: 1rem; color: white; }
     padding: 0 var(--mobile-padding);
 }
 
-.mobile-logo { 
-    height: 40px;
-}
-
     .mobile-menu-toggle {
     background: none;
     border: none;
