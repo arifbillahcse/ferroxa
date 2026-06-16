@@ -7082,42 +7082,41 @@ body[data-theme="dark"] .legend-item {
         max-width: 100%;
         padding: 0 1rem;
     }
-}
-    
+
     .feature-card {
         padding: 25px;
         gap: 15px;
     }
-    
+
     .feature-icon {
         width: 50px;
         height: 50px;
     }
-    
+
     .feature-icon i {
         font-size: 1.2rem;
     }
-    
+
     .feature-content h3 {
         font-size: 1.3rem;
     }
-    
+
     .feature-content p {
         font-size: 0.95rem;
     }
-    
+
     .cta-section {
         padding: 40px 20px;
     }
-    
+
     .cta-section h3 {
         font-size: 1.8rem;
     }
-    
+
     .cta-section p {
         font-size: 1rem;
     }
-    
+
     .contact-btn {
         padding: 12px 24px;
         font-size: 1rem;
