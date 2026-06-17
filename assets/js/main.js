@@ -449,13 +449,7 @@ function initializeVideoControls() {
     const heroVideo = document.querySelector('.hero-video');
     
     if (!heroVideo) return;
-    
-    // Pause video on mobile to save bandwidth
-    if (window.innerWidth <= 768) {
-        heroVideo.pause();
-        heroVideo.style.display = 'none';
-    }
-    
+
     // Play button functionality (if exists)
     const playButtons = document.querySelectorAll('.play-button');
     
