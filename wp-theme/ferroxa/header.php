@@ -167,6 +167,7 @@ $lang_names = array( 'en' => 'English', 'ar' => 'العربية', 'fr' => 'Fran�
 <div class="mobile-nav-overlay" id="mobile-nav-overlay">
 	<div class="mobile-nav-content">
 		<div class="mobile-nav-header">
+				<img src="<?php echo ferroxa_asset( 'assets/images/logo.png' ); ?>" alt="Ferroxa" class="mobile-logo">
 			<button class="mobile-nav-close" id="mobile-nav-close">
 				<i class="fas fa-times"></i>
 			</button>

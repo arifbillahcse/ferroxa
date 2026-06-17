@@ -638,7 +638,7 @@ img.logo-img {
 .mobile-nav-header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-bottom: 3rem;
 }
 
