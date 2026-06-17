@@ -320,6 +320,11 @@
     text-align: center;
   }
 
+  .contact-info .contact-item {
+    justify-content: center;
+    text-align: center;
+  }
+
   /* Extra bottom padding so the fixed back-to-top button
      doesn't overlap the copyright row */
   .footer-bottom {
