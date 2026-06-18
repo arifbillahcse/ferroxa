@@ -271,7 +271,7 @@
   }
 
   .hero-logo {
-    max-width: 56% !important;
+    max-width: 42% !important;
   }
 
   /* Stack hero content naturally — no absolute bottom-pinning on mobile */
@@ -294,6 +294,7 @@
     justify-content: center;
     width: 100%;
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   /* Logo text removed - using only SVG logo now */
@@ -313,6 +314,8 @@
   .hero-cta-btn {
     padding: 0.75rem 1.25rem;
     font-size: 0.95rem;
+    justify-content: center;
+    text-align: center;
   }
   
   /* Grid layouts - single column */
