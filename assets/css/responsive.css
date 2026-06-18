@@ -216,8 +216,8 @@
 
   /* ── Hero video: fill full section on mobile ── */
   .hero-section {
-    height: 100svh !important;
-    min-height: 100svh !important;
+    height: 78svh !important;
+    min-height: 78svh !important;
     overflow: hidden;
   }
 
