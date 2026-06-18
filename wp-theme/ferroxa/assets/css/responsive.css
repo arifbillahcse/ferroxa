@@ -216,8 +216,8 @@
 
   /* ── Hero video: fill full section on mobile ── */
   .hero-section {
-    height: 78svh !important;
-    min-height: 78svh !important;
+    height: 68svh !important;
+    min-height: 10svh !important;
     overflow: hidden;
   }
 
@@ -444,9 +444,11 @@
   }
   
   .hero-cta-btn {
+    margin-bottom: 73px;
     padding: 0.6rem 1rem;
     font-size: 0.875rem;
     gap: 0.5rem;
+    margin-top: 0;
   }
   
   /* Section headers */
