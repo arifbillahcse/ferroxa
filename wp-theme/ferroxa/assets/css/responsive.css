@@ -274,8 +274,26 @@
     max-width: 56% !important;
   }
 
+  /* Stack hero content naturally — no absolute bottom-pinning on mobile */
+  .hero-content {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 1rem;
+  }
+
   .hero-actions {
-    left: 20%;
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    bottom: auto !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
   }
 
   /* Logo text removed - using only SVG logo now */
