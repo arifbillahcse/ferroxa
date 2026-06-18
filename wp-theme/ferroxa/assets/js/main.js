@@ -228,13 +228,26 @@ function initializeMobileMenu() {
         });
     });
     
+    // Products dropdown accordion toggle
+    const dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const parentLi = this.closest('.mobile-dropdown');
+            if (parentLi) {
+                parentLi.classList.toggle('active');
+            }
+        });
+    });
+
     // Close on escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && mobileOverlay.classList.contains('active')) {
             closeMobileMenu();
         }
     });
-    
+
     // Make closeMobileMenu globally available
     window.closeMobileMenu = closeMobileMenu;
 }

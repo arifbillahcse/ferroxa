@@ -167,7 +167,6 @@ $lang_names = array( 'en' => 'English', 'ar' => 'العربية', 'fr' => 'Fran�
 <div class="mobile-nav-overlay" id="mobile-nav-overlay">
 	<div class="mobile-nav-content">
 		<div class="mobile-nav-header">
-				<img src="<?php echo ferroxa_asset( 'assets/images/logo.png' ); ?>" alt="Ferroxa" class="mobile-logo">
 			<button class="mobile-nav-close" id="mobile-nav-close">
 				<i class="fas fa-times"></i>
 			</button>
@@ -176,34 +175,36 @@ $lang_names = array( 'en' => 'English', 'ar' => 'العربية', 'fr' => 'Fran�
 			<li><a href="<?php echo ferroxa_url( 'home' ); ?>" class="mobile-nav-link"><?php ferroxa_t( 'nav_home' ); ?></a></li>
 			<li><a href="<?php echo ferroxa_url( 'about' ); ?>" class="mobile-nav-link"><?php ferroxa_t( 'nav_about' ); ?></a></li>
 			<li><a href="<?php echo ferroxa_url( 'home', 'services' ); ?>" class="mobile-nav-link"><?php ferroxa_t( 'nav_whatwedo' ); ?></a></li>
-			<li class="mobile-nav-category">
-				<div class="mobile-category-header">
-					<i class="fas fa-cube"></i>
-					<?php ferroxa_t( 'nav_products' ); ?>
-				</div>
-				<div class="mobile-subcategory">
-					<div class="mobile-subheader">
-						<i class="fas fa-industry"></i>
-						<?php ferroxa_t( 'cat_ferrous' ); ?>
+			<li class="mobile-nav-category mobile-dropdown">
+				<button class="mobile-nav-link mobile-dropdown-toggle" type="button">
+					<span><?php ferroxa_t( 'nav_products' ); ?></span>
+					<i class="fas fa-chevron-down"></i>
+				</button>
+				<div class="mobile-dropdown-menu">
+					<div class="mobile-subcategory">
+						<div class="mobile-subheader">
+							<i class="fas fa-industry"></i>
+							<?php ferroxa_t( 'cat_ferrous' ); ?>
+						</div>
+						<a href="<?php echo ferroxa_url( 'product-steel-billets' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_steel_billets' ); ?></a>
+						<a href="<?php echo ferroxa_url( 'product-steel-slabs' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_steel_slabs' ); ?></a>
 					</div>
-					<a href="<?php echo ferroxa_url( 'product-steel-billets' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_steel_billets' ); ?></a>
-					<a href="<?php echo ferroxa_url( 'product-steel-slabs' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_steel_slabs' ); ?></a>
-				</div>
-				<div class="mobile-subcategory">
-					<div class="mobile-subheader">
-						<i class="fas fa-atom"></i>
-						<?php ferroxa_t( 'cat_nonferrous' ); ?>
+					<div class="mobile-subcategory">
+						<div class="mobile-subheader">
+							<i class="fas fa-atom"></i>
+							<?php ferroxa_t( 'cat_nonferrous' ); ?>
+						</div>
+						<a href="<?php echo ferroxa_url( 'product-copper' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_copper' ); ?></a>
+						<a href="<?php echo ferroxa_url( 'product-zinc' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_zinc' ); ?></a>
+						<a href="<?php echo ferroxa_url( 'product-aluminum' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_aluminum' ); ?></a>
 					</div>
-					<a href="<?php echo ferroxa_url( 'product-copper' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_copper' ); ?></a>
-					<a href="<?php echo ferroxa_url( 'product-zinc' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_zinc' ); ?></a>
-					<a href="<?php echo ferroxa_url( 'product-aluminum' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_aluminum' ); ?></a>
-				</div>
-				<div class="mobile-subcategory">
-					<div class="mobile-subheader">
-						<i class="fas fa-gem"></i>
-						<?php ferroxa_t( 'cat_precious' ); ?>
+					<div class="mobile-subcategory">
+						<div class="mobile-subheader">
+							<i class="fas fa-gem"></i>
+							<?php ferroxa_t( 'cat_precious' ); ?>
+						</div>
+						<a href="<?php echo ferroxa_url( 'product-gold' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_gold_mobile' ); ?></a>
 					</div>
-					<a href="<?php echo ferroxa_url( 'product-gold' ); ?>" class="mobile-sub-link"><?php ferroxa_t( 'p_gold_mobile' ); ?></a>
 				</div>
 			</li>
 			<li><a href="<?php echo ferroxa_url( 'contact' ); ?>" class="mobile-nav-link"><?php ferroxa_t( 'nav_contact' ); ?></a></li>

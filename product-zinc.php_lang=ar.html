@@ -247,7 +247,6 @@
 <div class="mobile-nav-overlay" id="mobile-nav-overlay">
         <div class="mobile-nav-content">
             <div class="mobile-nav-header">
-                <img src="assets/images/logo.png" alt="Ferroxa" class="mobile-logo">
                 <button class="mobile-nav-close" id="mobile-nav-close">
                     <i class="fas fa-times"></i>
                 </button>
@@ -259,10 +258,12 @@
                     حول                </a></li>
                 <li><a href="index.php.html#services?lang=ar" class="mobile-nav-link">
                     ما نفعله                </a></li>
-                <li class="mobile-nav-category">
-                    <div class="mobile-category-header">
-                        <i class="fas fa-cube"></i>
-                        المنتجات                    </div>
+                <li class="mobile-nav-category mobile-dropdown">
+                    <button class="mobile-nav-link mobile-dropdown-toggle" type="button">
+                        <span>المنتجات</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu">
                     <div class="mobile-subcategory">
                         <div class="mobile-subheader">
                             <i class="fas fa-industry"></i>
@@ -289,6 +290,7 @@
                             المعادن الثمينة                        </div>
                         <a href="product-gold.php%3Flang=ar.html" class="mobile-sub-link">
                             ذهب غير مصنع                        </a>
+                    </div>
                     </div>
                 </li>
                 <li><a href="contact.php%3Flang=ar.html" class="mobile-nav-link">

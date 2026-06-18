@@ -246,7 +246,6 @@
 <div class="mobile-nav-overlay" id="mobile-nav-overlay">
         <div class="mobile-nav-content">
             <div class="mobile-nav-header">
-                <img src="assets/images/logo.png" alt="Ferroxa" class="mobile-logo">
                 <button class="mobile-nav-close" id="mobile-nav-close">
                     <i class="fas fa-times"></i>
                 </button>
@@ -258,10 +257,12 @@
                     À propos                </a></li>
                 <li><a href="index.php.html#services?lang=fr" class="mobile-nav-link">
                     Ce Que Nous Faisons                </a></li>
-                <li class="mobile-nav-category">
-                    <div class="mobile-category-header">
-                        <i class="fas fa-cube"></i>
-                        Produits                    </div>
+                <li class="mobile-nav-category mobile-dropdown">
+                    <button class="mobile-nav-link mobile-dropdown-toggle" type="button">
+                        <span>Produits</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu">
                     <div class="mobile-subcategory">
                         <div class="mobile-subheader">
                             <i class="fas fa-industry"></i>
@@ -288,6 +289,7 @@
                             Métaux Précieux                        </div>
                         <a href="product-gold.php%3Flang=fr.html" class="mobile-sub-link">
                             Or Non-Manufacturé                        </a>
+                    </div>
                     </div>
                 </li>
                 <li><a href="contact.php%3Flang=fr.html" class="mobile-nav-link">
