@@ -357,6 +357,20 @@
     padding: 2rem 1.5rem;
   }
   
+  /* About story section: image on top, content below */
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .story-image {
+    order: -1;
+  }
+
+  .story-img {
+    height: 280px;
+  }
+
   /* Contact form */
   .form-row {
     grid-template-columns: 1fr;

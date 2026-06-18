@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCounters();
     // initializeNetworkAnimations(); // Disabled per user request
     initializeAccessibility();
+    initializeLanguageToggle();
 });
 
 /**
@@ -590,6 +591,21 @@ function animateCounter(element) {
             element.textContent = Math.floor(current);
         }
     }, 16);
+}
+
+function initializeLanguageToggle() {
+    const langToggle = document.getElementById('lang-toggle');
+    const langSelector = langToggle ? langToggle.closest('.language-selector') : null;
+    if (!langSelector) return;
+
+    langToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        langSelector.classList.toggle('open');
+    });
+
+    document.addEventListener('click', function() {
+        langSelector.classList.remove('open');
+    });
 }
 
 /**

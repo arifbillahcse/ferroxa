@@ -497,7 +497,8 @@
   overflow: hidden;
 }
 
-.language-selector:hover .lang-menu {
+.language-selector:hover .lang-menu,
+.language-selector.open .lang-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) scale(1);
