@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'FERROXA_VERSION', '1.0.0' );
+define( 'FERROXA_VERSION', '1.2.0' );
 define( 'FERROXA_SUPPORTED_LANGS', 'en,ar,fr' );
 
 /* -------------------------------------------------------------------------
