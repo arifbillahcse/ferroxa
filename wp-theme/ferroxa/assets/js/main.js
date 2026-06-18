@@ -206,24 +206,23 @@ function initializeMobileMenu() {
     // Close on mobile link click
     mobileLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const href = this.getAttribute('href');
-            
+            if (!href) return;
+
             if (href.startsWith('#')) {
+                e.preventDefault();
                 const targetSection = document.querySelector(href);
                 if (targetSection) {
                     closeMobileMenu();
-                    
                     setTimeout(() => {
                         const headerHeight = document.querySelector('.main-header').offsetHeight;
                         const targetPosition = targetSection.offsetTop - headerHeight;
-                        
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
+                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
                     }, 300);
                 }
+            } else {
+                // Regular page link — close menu then navigate
+                closeMobileMenu();
             }
         });
     });

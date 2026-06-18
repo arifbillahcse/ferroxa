@@ -362,6 +362,15 @@
     grid-template-columns: 1fr;
     gap: 0;
   }
+
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
   
   /* Footer */
   .footer-grid {
